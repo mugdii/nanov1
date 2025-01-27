@@ -5,6 +5,7 @@
  */
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/keys.h>
 
 / {
@@ -34,10 +35,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &trans  &trans  &trans    &trans          &trans     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp BSPC
-&trans  &trans  &trans  &trans    &kp LEFT_SHIFT  &trans     &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp N9        &kp NUMBER_0  &trans
-&trans  &trans  &trans  &trans    &trans          &trans     &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &trans        &trans
-                        &kp LGUI  &trans          &kp ESC    &kp RET       &trans        &trans
+&bl BL_ON  &bl BL_OFF  &trans  &trans    &trans          &trans     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp BSPC
+&trans     &trans      &trans  &trans    &kp LEFT_SHIFT  &trans     &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp N9        &kp NUMBER_0  &trans
+&trans     &trans      &trans  &trans    &trans          &trans     &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &trans        &trans
+                               &kp LGUI  &trans          &kp ESC    &kp RET       &trans        &trans
             >;
         };
 
